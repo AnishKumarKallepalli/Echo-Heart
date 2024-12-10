@@ -477,7 +477,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -4586,6 +4586,7 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  color: #fff;
 }
 
 .card-subtitle {
