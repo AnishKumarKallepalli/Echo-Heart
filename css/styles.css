@@ -44,6 +44,7 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	background-color: #0a0a0a;
 }
 
 body, p {
@@ -60,37 +61,31 @@ body, p {
 }
 
 h1 {
-	color: #333;
 	font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h2 {
-	color: #fff;
 	font: 700 2rem/2.625rem "Open Sans", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h3 {
-	color: #333;
 	font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h4 {
-	color: #333;
 	font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
 	letter-spacing: -0.1px;
 }
 
 h5 {
-	color: #333;
 	font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
 	letter-spacing: -0.1px;
 }
 
 h6 {
-	color: #333;
 	font: 700 1rem/1.375rem "Open Sans", sans-serif;
 	letter-spacing: -0.1px;
 }
@@ -124,12 +119,12 @@ h6 {
 
 a {
 	color: #555;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #555;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a.white {
@@ -866,7 +861,6 @@ input[type='checkbox'] {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	background-color: #0a0a0a;
 }
 
 .cards-1 .h2-heading {
@@ -880,7 +874,7 @@ input[type='checkbox'] {
 	margin-left: auto;
 	padding: 0;
 	border: none;
-	background-color: #0A0A;
+	background-color: #0a0a;
 }
 
 .cards-1 .card-image {
@@ -1014,7 +1008,6 @@ input[type='checkbox'] {
 	margin-bottom: 0.875rem;
 	margin-left: 0;
 	border: 0;
-	background-color: #0a0a0a;
 	text-align: left;
 }
 
@@ -1103,263 +1096,12 @@ input[type='checkbox'] {
 }
 
 
-/*********************/
-/*     10. Video     */
-/*********************/
-.basic-2 {
-	padding-top: 8rem;
-	padding-bottom: 6.75rem;
-	background-color: #f3f7fd;
-	text-align: center;
-}
-
-.basic-2 .image-container {
-	margin-bottom: 2rem;
-}
-
-.basic-2 .image-container img {
-	border-radius: 0.75rem;
-}
-
-.basic-2 .video-wrapper {
-	position: relative;
-}
-
-/* Video Play Button */
-.basic-2 .video-play-button {
-	position: absolute;
-	z-index: 10;
-	top: 50%;
-	left: 50%;
-	display: block;
-	box-sizing: content-box;
-	width: 2rem;
-	height: 2.75rem;
-	padding: 1.125rem 1.25rem 1.125rem 1.75rem;
-	border-radius: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-  
-.basic-2 .video-play-button:before {
-	content: "";
-	position: absolute;
-	z-index: 0;
-	top: 50%;
-	left: 50%;
-	display: block;
-	width: 4.75rem;
-	height: 4.75rem;
-	border-radius: 50%;
-	background: #0a0a0a;
-	animation: pulse-border 1500ms ease-out infinite;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-  
-.basic-2 .video-play-button:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	left: 50%;
-	display: block;
-	width: 4.375rem;
-	height: 4.375rem;
-	border-radius: 50%;
-	background: #0a0a0a;
-	transition: all 200ms;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-  
-.basic-2 .video-play-button span {
-	position: relative;
-	display: block;
-	z-index: 3;
-	top: 0.375rem;
-	left: 0.25rem;
-	width: 0;
-	height: 0;
-	border-left: 1.625rem solid #fff;
-	border-top: 1rem solid transparent;
-	border-bottom: 1rem solid transparent;
-}
-  
-@keyframes pulse-border {
-	0% {
-		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-		opacity: 0;
-	}
-}
-/* end of video play button */  
-
-.basic-2 .p-heading {
-	margin-bottom: 1rem;
-}
-
-
-/***********************/
-/*     11. Pricing     */
-/***********************/
-.cards-2 {
-	padding-top: 7.875rem;
-	padding-bottom: 2.25rem;
-	text-align: center;
-}
-
-.cards-2 .h2-heading {
-	margin-bottom: 3.75rem;
-}
-
-.cards-2 .card {
-	display: block;
-	max-width: 19rem;
-	margin-right: auto;
-	margin-bottom: 3rem;
-	margin-left: auto;
-	border: 1px solid #ccd3df;
-	border-radius: 0.375rem;
-}
-
-.cards-2 .card .card-body {
-	padding: 2.5rem 2rem 2.75rem 2em;
-}
-
-.cards-2 .card .card-title {
-	margin-bottom: 0.5rem;
-	color: #0a0a0a;
-	font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
-}
-
-.cards-2 .card .price .currency {
-	margin-right: 0.25rem;
-	color: #434c54;
-	font-weight: 700;
-	font-size: 1.5rem;
-	vertical-align: 40%;
-}
-
-.cards-2 .card .price .value {
-	color: #434c54;
-	font: 700 3.25rem/3.5rem "Open Sans", sans-serif;
-	text-align: center;
-}
-
-.cards-2 .card .frequency {
-	font-size: 0.875rem;
-}
-
-.cards-2 .card .divider {
-	height: 1px;
-	margin-top: 1.75rem;
-	margin-bottom: 2rem;
-	border: none;
-	background-color: #ccd3df;
-}
-
-.cards-2 .card .list-unstyled {
-	margin-top: 1.875rem;
-	margin-bottom: 1.625rem;
-	text-align: left;
-}
-
-.cards-2 .card .list-unstyled .media {
-	margin-bottom: 0.5rem;
-}
-
-.cards-2 .card .list-unstyled .fas {
-	color: #0a0a0a;
-	font-size: 0.875rem;
-	line-height: 1.625rem;
-}
-
-.cards-2 .card .list-unstyled .fas.fa-times {
-	margin-left: 0.1875rem;
-	margin-right: 0.125rem;
-	color: #555;
-}
-
-.cards-2 .card .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-
-/****************************/
-/*     12. Testimonials     */
-/****************************/
-.slider-2 {
-	padding-top: 2.75rem;
-	padding-bottom: 4rem;
-}
-
-.slider-2 .slider-container {
-	position: relative;
-}
-
-.slider-2 .swiper-container {
-	position: static;
-	width: 82%;
-	text-align: center;
-}
-
-.slider-2 .image-wrapper {
-	width: 6rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-}
-
-.slider-2 .image-wrapper img {
-	border-radius: 50%;
-}
-
-.slider-2 .testimonial-text {
-	margin-bottom: 0.5rem;
-}
-
-.slider-2 .testimonial-author {
-	color: #333;
-}
-
-.slider-2 .swiper-button-prev,
-.slider-2 .swiper-button-next {
-	width: 1.125rem;
-}
-
-.slider-2 .swiper-button-prev:focus,
-.slider-2 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
-	outline: none;
-}
-
-.slider-2 .swiper-button-prev {
-	left: -0.375rem;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
-	background-size: 1.125rem 1.75rem;
-}
-
-.slider-2 .swiper-button-next {
-	right: -0.375rem;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
-	background-size: 1.125rem 1.75rem;
-}
-
-
 /**************************/
 /*     13. Newsletter     */
 /**************************/
 .form {
 	padding-top: 4rem;
 	padding-bottom: 6rem;
-	background-color: #0A0A0A;
 }
 
 .form .text-container {
@@ -1404,82 +1146,6 @@ input[type='checkbox'] {
 }
 
 
-/**********************/
-/*     14. Footer     */
-/**********************/
-.footer-frame {
-	width: 100%;
-	height: 1.5rem;
-}
-
-.footer {
-	padding-top: 3rem;
-	padding-bottom: 0.5rem;
-	background-color: #0a0a0a;
-}
-
-.footer .footer-col {
-	margin-bottom: 2.25rem;
-}
-
-.footer h4 {
-	margin-bottom: 0.625rem;
-	color: #fff;
-}
-
-.footer .list-unstyled,
-.footer p {
-	color: #f3f7fd;
-}
-
-.footer .footer-col.middle .list-unstyled .fas {
-	color: #fff;
-	font-size: 0.5rem;
-	line-height: 1.5rem;
-}
-
-.footer .footer-col.middle .list-unstyled .media-body {
-	margin-left: 0.5rem;
-}
-
-.footer .footer-col.last .list-unstyled .fas {
-	color: #fff;
-	font-size: 0.875rem;
-	line-height: 1.5rem;
-}
-
-.footer .footer-col.last .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.footer .footer-col.last .list-unstyled .fas.fa-globe {
-	margin-left: 1rem;
-	margin-right: 0.625rem;
-}
-
-
-/*************************/
-/*     15. Copyright     */
-/*************************/
-.copyright {
-	padding-top: 1rem;
-	padding-bottom: 0.375rem;
-	background-color: #0a0a0a;
-	text-align: center;
-}
-
-.copyright .p-small {
-	padding-top: 1.375rem;
-	border-top: 1px solid #718ad1;
-	color: #f3f7fd;
-}
-
-.copyright a {
-	color: #f3f7fd;
-	text-decoration: none;
-}
-
-
 /**********************************/
 /*     16. Back To Top Button     */
 /**********************************/
@@ -1499,130 +1165,6 @@ a.back-to-top {
 
 a:hover.back-to-top {
 	background-color: #555; 
-}
-
-
-/***************************/
-/*     17. Extra Pages     */
-/***************************/
-.ex-header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
-	background-color: #0a0a0a;
-	text-align: center;
-}
-
-.ex-header h1 {
-	color: #fff;
-}
-
-.ex-basic-1 {
-	padding-top: 2rem;
-	padding-bottom: 0.875rem;
-	background-color: #f3f7fd;
-}
-
-.ex-basic-1 .breadcrumbs {
-	margin-bottom: 1.125rem;
-}
-
-.ex-basic-1 .breadcrumbs .fa {
-	margin-right: 0.5rem;
-	margin-left: 0.625rem;
-}
-
-.ex-basic-2 {
-	padding-top: 4.75rem;
-	padding-bottom: 4rem;
-}
-
-.ex-basic-2 h3 {
-	margin-bottom: 1rem;
-}
-
-.ex-basic-2 .text-container {
-	margin-bottom: 3.625rem;
-}
-
-.ex-basic-2 .text-container.last {
-	margin-bottom: 0;
-}
-
-.ex-basic-2 .text-container.dark {
-	padding: 1.625rem 1.5rem 0.75rem 2rem;
-	background-color: #f3f7fd;
-}
-
-.ex-basic-2 .image-container-large {
-	margin-bottom: 4rem;
-}
-
-.ex-basic-2 .image-container-large img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .image-container-small img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .list-unstyled .fas {
-	color: #0a0a0a;
-	font-size: 0.5rem;
-	line-height: 1.625rem;
-}
-
-.ex-basic-2 .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.ex-basic-2 .form-container {
-	margin-top: 3rem;
-}
-
-.ex-basic-2 .btn-outline-reg {
-	margin-top: 1.75rem;
-}
-
-.ex-footer-frame {
-	width: 100%;
-	height: 2.75rem;
-	background-color: #f3f7fd;
-}
-
-
-/****************************************/
-/*     18. Sign Up and Log In Pages     */
-/****************************************/
-.ex-2-header {
-	padding-top: 9rem;
-	background-color: #0a0a0a;
-	text-align: center;
-	min-height: 100vh;
-}
-
-.ex-2-header h1,
-.ex-2-header p {
-	color: #fff;
-}
-
-.ex-2-header p {
-	max-width: 24rem;
-	margin-right: auto;
-	margin-bottom: 2.5rem;
-	margin-left: auto;
-}
-
-.ex-2-header .form-container {
-	max-width: 26rem;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2.25rem 1.25rem 1.25rem 1.25rem;
-	border-radius: 0.5rem;
-	background-color: #f3f7fd;
-}
-
-.ex-2-header .checkbox {
-	text-align: left;
 }
 
 
@@ -1668,19 +1210,6 @@ a:hover.back-to-top {
 	/* end of header */
 
 
-	/* Testimonials */
-	.slider-2 .swiper-button-prev {
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	
-	.slider-2 .swiper-button-next {
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	/* end of testimonials */
-
-
 	/* Newsletter */
 	.form .text-container {
 		padding: 4rem 2.5rem 3rem 2.5rem;
@@ -1692,39 +1221,6 @@ a:hover.back-to-top {
 	}
 	/* end of newsletter */
 
-
-	/* Footer */
-	.footer-frame {
-		height: 5rem;
-	}
-	/* end of footer */
-
-
-	/* Extra Pages */
-	.ex-header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
-	}
-
-	.ex-basic-2 .text-container.dark {
-		padding: 2.5rem 3rem 2rem 3rem;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-top: 0;
-	}
-	/* end of extra pages */
-
-
-	/* Sign Up And Log In Pages */
-	.ex-2-header {
-		padding-top: 11rem;
-	}
-
-	.ex-2-header .form-container {
-		padding: 2.25rem 1.75rem 1.25rem 1.75rem;
-	}
-	/* end of sign up and log in pages */
 }
 /* end of min-width width 768px */
 
@@ -1835,6 +1331,7 @@ a:hover.back-to-top {
 	.cards-1 .card {
 		display: inline-block;
 		width: 17rem;
+		height: 90%;
 		max-width: 100%;
 		margin-right: 1rem;
 		margin-left: 1rem;
@@ -1895,7 +1392,6 @@ a:hover.back-to-top {
 	.basic-1 {
 		padding-top: 5rem;
 		/* margin-top: 1rem; */
-		background-color: #0A0A0A;
 		/* color: #fff; */
 	}
 
@@ -1903,59 +1399,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of details */
-
-
-	/* Video */
-	.basic-2 .image-container {
-		max-width: 53.125rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.basic-2 p {
-		width: 65%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of video */
-
-
-	/* Pricing */
-	.cards-2 .card {
-		display: inline-block;
-		margin-right: 0.5rem;
-		margin-left: 0.5rem;
-		vertical-align: top;
-	}
-	/* end of pricing */
-
-
-	/* Testimonials */
-	.slider-2 .swiper-container {
-		width: 92%;
-		text-align: left;
-	}
-
-	.slider-2 .image-wrapper {
-		float: left;
-		width: 10rem;
-		margin-bottom: 0;
-	}
-
-	.slider-2 .text-wrapper {
-		max-width: 100%;
-		margin-top: 1.25rem;
-		margin-left: 13rem;
-	}
-
-	.slider-2 .swiper-button-prev {
-		left: -0.75rem;
-	}
-	
-	.slider-2 .swiper-button-next {
-		right: -0.75rem;
-	}
-	/* end of testimonials */
 
 
 	/* Newsletter */
@@ -1979,18 +1422,6 @@ a:hover.back-to-top {
 	}
 	/* end of newsletter */
 
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 80%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 {
-		padding-bottom: 5rem;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 992px */
 
@@ -2042,6 +1473,7 @@ a:hover.back-to-top {
 	/* Description */
 	.cards-1 .card {
 		width: 18.875rem;
+		height: 90%;
 		margin-right: 2rem;
 		margin-left: 2rem;
 		background-color: #0A0A;
@@ -2085,30 +1517,6 @@ a:hover.back-to-top {
 	/* end of details */
 
 
-	/* Pricing */
-	.cards-2 .card {
-		width: 19.375rem;
-		max-width: 100%;
-		margin-right: 1.75rem;
-		margin-left: 1.75rem;
-	}
-
-	.cards-2 .card .card-body {
-		padding-right: 2.25rem;
-		padding-left: 2.25rem;
-	}
-	/* end of pricing */
-
-
-	/* Testimonials */
-	.slider-2 .slider-container {
-		width: 64.125rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of testimonials */
-
-
 	/* Newsletter */
 	.form .text-container {
 		width: 64.75rem;
@@ -2127,37 +1535,5 @@ a:hover.back-to-top {
 	}
 	/* end of newsletter */
 
-
-	/* Footer */
-	.footer .footer-col.first {
-		margin-right: 1.5rem;
-	}
-
-	.footer .footer-col.middle {
-		margin-right: 0.75rem;
-		margin-left: 0.75rem;
-	}
-
-	.footer .footer-col.last {
-		margin-left: 1.5rem;
-	}
-	/* end of footer */
-
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 60%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-left: 1.75rem;
-	}
-
-	.ex-basic-2 .image-container-small {
-		margin-left: 1.75rem;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 1200px */
