@@ -593,6 +593,7 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
   align-content: center;
+  flex-direction: row;
 }
 
 .no-gutters {

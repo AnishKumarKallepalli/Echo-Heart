@@ -42,23 +42,29 @@ Colors:
 /******************************/
 :root {
 	--black: #0a0a0a;
-	--white: #fff;
+	--background: #fff;
+	--cards: #f2f2f2;
+	--button: #fff;
+	--button-hover: #0a0a0a;
+	--buttontext: #0a0a0a;
+	--buttontext-hover: #fff;
   }
 
 body,
 html {
     width: 100%;
 	height: 100%;
-	background-color: var(--white);
+	background-color: var(--background);
 }
 
 body, p {
 	color: var(--black);
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	text-align: justify;
 }
 
 .p-large {
-	font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+	font: 500 1.125rem/1.75rem "Open Sans", sans-serif;
 }
 
 .p-small {
@@ -153,7 +159,7 @@ a.white {
 }
 
 .basic-1 .row{
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 .btn-solid-reg {
@@ -161,16 +167,16 @@ a.white {
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
 	border: 0.125rem solid var(--black);
 	border-radius: 2rem;
-	background-color: var(--white);
-	color: #000;
+	background-color: var(--button);
+	color: var(--buttontext);
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-solid-reg:hover {
-	background-color: var(--black);
-	color: var(--white);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 	text-decoration: none;
 }
 
@@ -179,8 +185,8 @@ a.white {
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
 	border: 0.125rem solid var(--black);
 	border-radius: 2rem;
-	background-color: var(--white);
-	color: var(--black);
+	background-color: var(--button);
+	color: var(--buttontext);
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -188,7 +194,7 @@ a.white {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: var(--black);
+	color: var(--buttontext-hover);
 	text-decoration: none;
 }
 
@@ -198,15 +204,15 @@ a.white {
 	border: 0.125rem solid var(--black);
 	border-radius: 2rem;
 	background-color: transparent;
-	color: var(--black);
+	color: var(--buttontext);
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-reg:hover {
-	background-color: var(--black);
-	color: var(--black);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 	text-decoration: none;
 }
 
@@ -216,15 +222,15 @@ a.white {
 	border: 0.125rem solid var(--black);
 	border-radius: 2rem;
 	background-color: transparent;
-	color: var(--black);
+	color: var(--buttontext);
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-lg:hover {
-	background-color: var(--black);
-	color: var(--black);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 	text-decoration: none;
 }
 
@@ -233,21 +239,22 @@ a.white {
 	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
 	border: 0.125rem solid var(--black);
 	border-radius: 2rem;
-	background-color: transparent;
-	color: var(--black);
+	background-color: var(--button);
+	color: var(--buttontext);
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-sm:hover {
-	background-color: var(--black);
-	color: var(--black);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 	text-decoration: none;
 }
 
 .form-group {
 	position: relative;
+	/* width: 140%; */
 	margin-bottom: 1.25rem;
 }
 
@@ -296,7 +303,7 @@ a.white {
 	padding-left: 1.25rem;
 	border: 1px solid #c4d8dc;
 	border-radius: 0.25rem;
-	background-color: var(--white);
+	background-color: var(--background);
 	color: #555;
 	font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -350,7 +357,7 @@ select::-ms-expand {
 	padding-left: 1.3125rem;
 	border: 1px solid #c4d8dc;
 	border-radius: 0.25rem;
-	background-color: var(--white);
+	background-color: var(--background);
 	color: #555;
 	font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -386,22 +393,23 @@ input[type='checkbox'] {
 }
 
 .form-control-submit-button {
-	display: inline-block;
+	/* display: inline-block; */
+	margin-top: 10px;
 	width: 100%;
 	height: 3.125rem;
-	border: 3px solid var(--black);
-	border-radius: 1.5rem;
-	background-color: var(--white);
-	color: var(--black);
+	/* border: 3px solid var(--black); */
+	/* border-radius: 1.5rem; */
+	/* background-color: var(--button); */
+	/* color: var(--buttontext); */
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
-	cursor: pointer;
-	transition: all 0.2s;
+	/* cursor: pointer; */
+	/* transition: all 0.2s; */
 }
 
-.form-control-submit-button:hover {
-	background-color: var(--black);
-	color: var(--white);
-}
+/* .form-control-submit-button:hover {
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
+} */
 
 /* Form Success And Error Message Formatting */
 #smsgSubmit.h3.text-center.tada.animated,
@@ -602,7 +610,7 @@ input[type='checkbox'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: var(--white);
+	background: var(--background);
 }
 
 .spinner {
@@ -657,7 +665,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -753,12 +761,12 @@ input[type='checkbox'] {
 	margin-bottom: 1.375rem;
 	margin-left: 0.5rem;
 	border: 0.125rem solid var(--black);
-	color: var(--black);
+	color: var(--buttontext);
 }
 
 .navbar-custom .nav-item .btn-outline-sm:hover {
-	background-color: var(--black);
-	color: var(--white);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 }
 
 .navbar-custom .navbar-toggler {
@@ -790,12 +798,12 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background-color: #f1f1f9;
+	background-color: var(--background);
 }
 
 .header .header-content {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 	text-align: center;
 }
 
@@ -820,13 +828,13 @@ input[type='checkbox'] {
 	margin-bottom: 1.125rem;
 	margin-left: 0.5rem;
 	border-color: var(--black);
-	background-color: var(--white);
-	color: var(--black);
+	background-color: var(--button);
+	color: var(--buttontext);
 }
 
 .header .btn-solid-lg:hover {
-	background-color: var(--black);
-	color: var(--white);
+	background-color: var(--button-hover);
+	color: var(--buttontext-hover);
 }
 
 .header .btn-outline-lg {
@@ -880,7 +888,7 @@ input[type='checkbox'] {
 	margin-left: auto;
 	padding: 0;
 	border: none;
-	background-color: #f2f2f2;
+	background-color: var(--cards);
 }
 
 .cards-1 .card-image {
@@ -989,7 +997,7 @@ input[type='checkbox'] {
 	margin: 2.5rem auto;
 	padding: 2rem 1.5rem 2rem 1.5rem;
 	border-radius: 0.25rem;
-	background: var(--white);
+	background: var(--background);
 	text-align: left;
 }
 
@@ -1043,12 +1051,12 @@ input[type='checkbox'] {
 	position: relative;
 	width: auto;
 	height: auto;
-	color: var(--black);
+	color: var(--buttontext);
 	opacity: 1;
 }
 
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
-	color: var(--black);
+	color: var(--buttontext-hover);
 }
 /* end of signup Button */
 
@@ -1063,7 +1071,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic a.mfp-close.as-button:hover {
-	color: var(--black);
+	color: var(--buttontext-hover);
 }
 /* end of back button */
 
@@ -1073,7 +1081,7 @@ input[type='checkbox'] {
 	right: -0.125rem;
 	width: 2.75rem;
 	height: 2.75rem;
-	color: #707984;
+	color: var(--buttontext-hover);
 }
 
 
@@ -1116,7 +1124,13 @@ input[type='checkbox'] {
 	margin-bottom: 3.5rem;
 	padding: 3.5rem 1rem 2.5rem 1rem;
 	border-radius: 0.5rem;
-	background-color: #f2f2f2;
+	background-color: var(--cards);
+	/* align-content: center; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .form h2 {
@@ -1136,7 +1150,7 @@ input[type='checkbox'] {
 }
 
 .form .fa-stack .fa-stack-1x {
-    color: var(--white);
+    color: var(--background);
     transition: all 0.2s ease;
 }
 
@@ -1224,8 +1238,8 @@ a:hover.back-to-top {
 	}
 
 	.form form {
-		margin-right: 4rem;
-		margin-left: 4rem;
+		margin-right: 2rem;
+		margin-left: 2rem;
 	}
 	/* end of newsletter */
 
@@ -1238,9 +1252,11 @@ a:hover.back-to-top {
 	
 	/* Navigation */
 	.navbar-custom {
-		padding: 2.125rem 1.5rem 2.125rem 2rem;
-        background: transparent;
+		padding: 2.125rem 5rem 2.125rem 5rem;
+		background: transparent;
 		box-shadow: none;
+		/* margin-left: 4rem; */
+		/* margin-right: 4rem; */
 	}
 
 	.navbar-custom .navbar-nav {
@@ -1258,8 +1274,8 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse {
-        padding: 0.5rem 1.5rem 0.5rem 2rem;
-        background-color: var(--white);
+        padding: 1rem 5rem 1rem 5rem;
+        background-color: var(--background);
         box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
  }
 
@@ -1344,7 +1360,7 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 		/* vertical-align: middle; */
-		background-color: #f2f2f2;
+		background-color: var(--cards);
 	}
 
 	.cards-1 .card-image {
@@ -1416,7 +1432,7 @@ a:hover.back-to-top {
 		margin-left: auto;
 		padding-top: 5rem;
 		padding-bottom: 4.5rem;
-		background-color: #f2f2f2;
+		background-color: var(--cards);
 	}
 
 	.form h2 {
@@ -1439,7 +1455,7 @@ a:hover.back-to-top {
 	
 	/* General Styles */
 	.h2-heading {
-		width: 50%;
+		width: 70%;
 	}
 	/* end of general styles */
 
@@ -1461,7 +1477,7 @@ a:hover.back-to-top {
 	}
 
 	.header .image-container .img-wrapper {
-		width: 600px;
+		width: 500px;
 	}
 
 	.header-frame {
@@ -1484,7 +1500,7 @@ a:hover.back-to-top {
 		/* height: 90%; */
 		margin-right: 2rem;
 		margin-left: 2rem;
-		background-color: #f2f2f2;
+		background-color: var(--cards);
 		align-content: center;
 	}
 
@@ -1549,19 +1565,19 @@ a:hover.back-to-top {
 
 
 /* My Own CSS */
-/* From Uiverse.io by gharsh11032000 */ 
+
 .mycard {
 	position: relative;
 	width: 300px;
 	height: 200px;
-	background-color: #f2f2f2;
+	background-color: var(--cards);
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 	perspective: 1000px;
-	box-shadow: 0 0 0 5px var(--white)fff80;
+	box-shadow: 0 0 0 5px var(--background)fff80;
 	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
   
@@ -1585,7 +1601,7 @@ a:hover.back-to-top {
 	height: 100%;
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: #f2f2f2;
+	background-color: var(--cards);
 	transform: rotateX(-90deg);
 	transform-origin: bottom;
 	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1597,6 +1613,7 @@ a:hover.back-to-top {
 }
 
 .mycard__title {
+	text-align: center;
 	margin: 0;
 	font-size: 24px;
 	color: #333;
@@ -1608,9 +1625,42 @@ a:hover.back-to-top {
   }
   
   .mycard__description {
+	text-align: center;
 	margin: 10px 0 0;
 	font-size: 14px;
 	color: #777;
 	line-height: 1.4;
   }
+
+.mybutton {
+	padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+  }
   
+  .mybutton:hover {
+	background-color: #23c483;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+  }
+  
+  .mybutton:active {
+	transform: translateY(-1px);
+  }
+
+.formpara{
+	width: 50%;
+	text-align: center;
+	padding-bottom: 2rem;
+}
