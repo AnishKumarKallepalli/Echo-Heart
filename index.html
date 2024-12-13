@@ -30,7 +30,7 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top" data-new-gr-c-s-check-loaded="14.1211.0" data-gr-ext-installed=""><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: none;">Back to Top</a>
+<body data-spy="scroll" data-target=".fixed-top" data-new-gr-c-s-check-loaded="14.1211.0" data-gr-ext-installed="">
     
     <!-- Preloader -->
 	<div class="spinner-wrapper" style="display: none;">
@@ -44,7 +44,7 @@
     
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top top-nav-collapse">
         <div class="container">
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -65,10 +65,10 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll active" href="#header">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                        <a class="nav-link page-scroll active" href="#features">FEATURES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#about">ABOUT US</a>
@@ -115,7 +115,8 @@
                     <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="images/header-software-app.png" alt="alternative">
+                                <img class="img-fluid" src="images/sound.gif" alt="alternative">
+                                
                             </div> <!-- end of img-wrapper -->
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
@@ -135,33 +136,51 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
+                    <div class="mycard card">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/sound.png" alt="alternative">
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/4ab87612-5568-40a5-9315-df6dccc92818/6ZIfUubMuw.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        </div>
+                        <div class="mycard__content">
+                          <p class="mycard__title">Voice Preservation</p>
+                          <p class="mycard__description">Capture the unique tone, accent, and personality of a loved one's voice. With EchoHeart, their voice stays with you forever, as if they're right there beside you.</p>
+                        </div>
+                      </div>
+                    <div class="mycard card">
+                        <div class="card-image">
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/a682c781-8e51-426c-8225-6805a6c1699a/XSl8L8PupT.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        </div>
+                        <div class="mycard__content">
+                          <p class="mycard__title">Emotional Responses</p>
+                          <p class="mycard__description">Interact with a voice assistant that feels personal and warm, responding just like your loved one would. It's more than AI, it's a piece of them, brought to life.</p>
+                        </div>
+                    </div>
+                    <div class="mycard card">
+                        <div class="card-image">
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/8871e95b-acef-46ca-8d1d-1cdf752392bd/7t3gjWIF15.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        </div>
+                        <div class="mycard__content">
+                          <p class="mycard__title">Effortless Setup</p>
+                          <p class="mycard__description">Easily record voices or upload existing audio with simple, user-friendly tools. Setting up your personalized assistant is quick and hassle-free.</p>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <!-- <div class="card">
+                        <div class="card-image">
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/4ab87612-5568-40a5-9315-df6dccc92818/6ZIfUubMuw.lottie" background="transparent" speed="1" loop="" autoplay=""></dotlottie-player>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Voice Preservation</h4>
-                            <p>Capture the unique tone, accent, and personality of a loved one’s voice. With EchoHeart, their voice stays with you forever, as if they’re right there beside you.</p>
+                            <p>Capture the unique tone, accent, and personality of a loved one's voice. With EchoHeart, their voice stays with you forever, as if they’re right there beside you.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/emotional.png" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Emotional Responses</h4>
-                            <p>Interact with a voice assistant that feels personal and warm, responding just like your loved one would. It’s more than AI, it’s a piece of them, brought to life.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-image">
                             <img class="img-fluid" src="images/easy.png" alt="alternative">
                         </div>
@@ -169,7 +188,7 @@
                             <h4 class="card-title">Effortless Setup</h4>
                             <p>Easily record voices or upload existing audio with simple, user-friendly tools. Setting up your personalized assistant is quick and hassle-free.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end of card -->
 
                 </div> <!-- end of col -->
