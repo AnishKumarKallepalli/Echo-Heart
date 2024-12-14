@@ -43,11 +43,14 @@ Colors:
 :root {
 	--black: #0a0a0a;
 	--background: #fff;
-	--cards: #f2f2f2;
+	--cards: #f0f0ee;
+	--textlight :hsl(30, 3%, 14%, 70%);
+	--textdark :#0a0a0a;
 	--button: #fff;
 	--button-hover: #0a0a0a;
 	--buttontext: #0a0a0a;
 	--buttontext-hover: #fff;
+	--gold: #c7b198;
   }
 
 body,
@@ -58,9 +61,13 @@ html {
 }
 
 body, p {
-	color: var(--black);
+	color: var(--textdark);
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 	text-align: justify;
+}
+
+p{
+	color: var(--textlight);
 }
 
 .p-large {
@@ -155,7 +162,7 @@ a.white {
 }
 
 .cards-1 .row{
- 	padding-top: 50px;
+ 	padding-top: 70px;
 }
 
 .basic-1 .row{
@@ -665,7 +672,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	/* background-color: var(--black); */
+	background-color: var(--background);
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -820,7 +827,7 @@ input[type='checkbox'] {
 
 .header .p-large {
 	margin-bottom: 2rem;
-	color: var(--black);
+	color: var(--textlight);
 }
 
 .header .btn-solid-lg {
@@ -1131,6 +1138,7 @@ input[type='checkbox'] {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.30);
 }
 
 .form h2 {
@@ -1664,3 +1672,10 @@ a:hover.back-to-top {
 	text-align: center;
 	padding-bottom: 2rem;
 }
+
+/* .mainvideo{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: normal;
+} */
