@@ -1129,7 +1129,7 @@ input[type='checkbox'] {
 
 	.header .image-container {
 		margin-top: 1rem;
-		margin-left: 1.5rem;
+		margin-left: 6rem;
 	}
 
 	.header .image-container .img-wrapper {
@@ -1307,10 +1307,11 @@ input[type='checkbox'] {
 }
 
 /* .mainvideo{
+	margin-left: 5px;
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
-	justify-content: flex-start;
-	align-items: normal;
+	align-items: flex-start;
 } */
 
 .btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
