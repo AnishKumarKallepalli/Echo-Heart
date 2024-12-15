@@ -1,42 +1,3 @@
-/* Template: Tivo - SaaS App HTML Landing Page Template
-   Author: Inovatik
-   Created: Sep 2019
-   Description: Master CSS file
-*/
-
-/*****************************************
-Table Of Contents:
-
-01. General Styles
-02. Preloader
-03. Navigation
-04. Header
-05. Customers
-06. Description
-07. Features
-08. Features Lightboxes
-09. Details
-10. Video
-11. Pricing
-12. Testimonials
-13. Newsletter
-14. Footer
-15. Copyright
-16. Back To Top Button
-17. Extra Pages
-18. Sign Up and Log In Pages
-19. Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Backgrounds, buttons, bullets, icons - blue var(--black)
-- Backgrounds, light button, light body text - light gray #f3f7fd
-- Headings text - black #333
-- Body text - dark gray #555
-******************************************/
-
-
 /******************************/
 /*     01. General Styles     */
 /******************************/
@@ -51,6 +12,7 @@ Colors:
 	--buttontext: #0a0a0a;
 	--buttontext-hover: #fff;
 	--gold: #c7b198;
+	font-family: "Open Sans", sans-serif;
   }
 
 body,
@@ -608,69 +570,8 @@ input[type='checkbox'] {
 /* end of fade animation for image lightbox - magnific popup */
 
 
-/*************************/
-/*     02. Preloader     */
-/*************************/
-.spinner-wrapper {
-	position: fixed;
-	z-index: 999999;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: var(--background);
-}
-
-.spinner {
-	position: absolute;
-	top: 50%; /* centers the loading animation vertically one the screen */
-	left: 50%; /* centers the loading animation horizontally one the screen */
-	width: 3.75rem;
-	height: 1.25rem;
-	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
-	text-align: center;
-}
-
-.spinner > div {
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
-	background-color: var(--black);
-	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-}
-
-.spinner .bounce1 {
-	-webkit-animation-delay: -0.32s;
-	animation-delay: -0.32s;
-}
-
-.spinner .bounce2 {
-	-webkit-animation-delay: -0.16s;
-	animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-	0%, 80%, 100% { -webkit-transform: scale(0); }
-	40% { -webkit-transform: scale(1.0); }
-}
-
-@keyframes sk-bouncedelay {
-	0%, 80%, 100% { 
-		-webkit-transform: scale(0);
-		-ms-transform: scale(0);
-		transform: scale(0);
-	} 40% { 
-		-webkit-transform: scale(1.0);
-		-ms-transform: scale(1.0);
-		transform: scale(1.0);
-	}
-}
-
-
 /**************************/
-/*     03. Navigation     */
+/*     02. Navigation     */
 /**************************/
 .navbar-custom {
 	background-color: var(--background);
@@ -803,7 +704,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*    04. Header     */
+/*    03. Header     */
 /*********************/
 .header {
 	background-color: var(--background);
@@ -862,21 +763,8 @@ input[type='checkbox'] {
 }
 
 
-/*************************/
-/*     05. Customers     */
-/*************************/
-.slider-1 {
-	padding-top: 5rem;
-	padding-bottom: 3.25rem;
-}
-
-.slider-1 .slider-container {
-	text-align: center;
-}
-
-
 /***************************/
-/*     06. Description     */
+/*     04. Description     */
 /***************************/
 .cards-1 {
 	padding-top: 1rem;
@@ -917,184 +805,9 @@ input[type='checkbox'] {
 }
 
 
-/************************/
-/*     07. Features     */
-/************************/
-.tabs {
-	padding-top: 8rem;
-	padding-bottom: 8.125rem;
-	background-color: #f3f7fd;
-}
-
-.tabs .h2-heading,
-.tabs .p-heading {
-	text-align: center;
-}
-
-.tabs .nav-tabs {
-	display: block;
-	margin-bottom: 2.25rem;
-	border-bottom: none;
-}
-
-.tabs .nav-link {
-	padding: 0.375rem 1rem 0.375rem 1rem;
-	border: none;
-	color: #86929b;
-	font-weight: 700;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.2s ease;
-}
-
-.tabs .nav-link:hover,
-.tabs .nav-link.active {
-	background: transparent;
-	color: var(--black);
-}
-
-.tabs .nav-link .fas {
-	margin-right: 0.625rem;
-}
-
-.tabs .image-container {
-	margin-bottom: 2.75rem;
-}
-
-.tabs .list-unstyled .fas {
-	color: var(--black);
-	font-size: 0.5rem;
-	line-height: 1.625rem;
-}
-
-.tabs .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.tabs #tab-1 h3 {
-	margin-bottom: 0.75rem;
-}
-
-.tabs #tab-1 .list-unstyled {
-	margin-bottom: 1.5rem;
-}
-
-.tabs #tab-2 h3 {
-	margin-bottom: 0.75rem;
-}
-
-.tabs #tab-2 .list-unstyled {
-	margin-bottom: 1.5rem;
-}
-
-.tabs #tab-3 h3 {
-	margin-bottom: 0.75rem;
-}
-
-.tabs #tab-3 .list-unstyled {
-	margin-bottom: 1.5rem;
-}
-
-
-/***********************************/
-/*     08. Features Lightboxes     */
-/***********************************/
-.lightbox-basic {
-	margin: 2.5rem auto;
-	padding: 2rem 1.5rem 2rem 1.5rem;
-	border-radius: 0.25rem;
-	background: var(--background);
-	text-align: left;
-}
-
-.lightbox-basic .container {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.lightbox-basic .image-container {
-	max-width: 33.75rem;
-	margin-right: auto;
-	margin-bottom: 3rem;
-	margin-left: auto;
-}
-
-.lightbox-basic h3 {
-	margin-bottom: 0.5rem;
-}
-
-.lightbox-basic hr {
-	width: 2.5rem;
-	height: 0.125rem;
-	margin-top: 0;
-	margin-bottom: 0.875rem;
-	margin-left: 0;
-	border: 0;
-	text-align: left;
-}
-
-.lightbox-basic h4 {
-	margin-bottom: 1rem;
-}
-
-.lightbox-basic .list-unstyled .fas {
-	color:var(--black);
-	font-size: 0.5rem;
-	line-height: 1.625rem;
-}
-
-.lightbox-basic .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.lightbox-basic .btn-outline-reg,
-.lightbox-basic .btn-solid-reg {
-	margin-top: 0.75rem;
-}
-
-/* Signup Button */
-.lightbox-basic .btn-solid-reg.mfp-close {
-	position: relative;
-	width: auto;
-	height: auto;
-	color: var(--buttontext);
-	opacity: 1;
-}
-
-.lightbox-basic .btn-solid-reg.mfp-close:hover {
-	color: var(--buttontext-hover);
-}
-/* end of signup Button */
-
-/* Back Button */
-.lightbox-basic a.mfp-close.as-button {
-	position: relative;
-	width: auto;
-	height: auto;
-	margin-left: 0.375rem;
-	color: var(--black);
-	opacity: 1;
-}
-
-.lightbox-basic a.mfp-close.as-button:hover {
-	color: var(--buttontext-hover);
-}
-/* end of back button */
-
-.lightbox-basic button.mfp-close.x-button {
-	position: absolute;
-	top: -0.125rem;
-	right: -0.125rem;
-	width: 2.75rem;
-	height: 2.75rem;
-	color: var(--buttontext-hover);
-}
-
 
 /***********************/
-/*     09. Details     */
+/*     05. Details     */
 /***********************/
 .basic-1 {
 	padding-top: 7.5rem;
@@ -1121,7 +834,7 @@ input[type='checkbox'] {
 
 
 /**************************/
-/*     13. Newsletter     */
+/*     6. Newsletter     */
 /**************************/
 .form {
 	padding-top: 4rem;
@@ -1174,28 +887,6 @@ input[type='checkbox'] {
 
 .form .fa-stack:hover .fa-stack-2x {
     color: var(--black);
-}
-
-
-/**********************************/
-/*     16. Back To Top Button     */
-/**********************************/
-a.back-to-top {
-	position: fixed;
-	z-index: 999;
-	right: 0.75rem;
-	bottom: 0.75rem;
-	display: none;
-	width: 2.625rem;
-	height: 2.625rem;
-	border-radius: 1.875rem;
-	background: var(--black) url("../images/up-arrow.png") no-repeat center 47%;
-	background-size: 1.125rem 1.125rem;
-	text-indent: -9999px;
-}
-
-a:hover.back-to-top {
-	background-color: #555; 
 }
 
 
@@ -1377,50 +1068,6 @@ a:hover.back-to-top {
 	}
 	/* end of description */
 
-
-	/* Features */
-	.tabs .nav-tabs {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 2.75rem;
-	} 
-
-	.tabs .nav-link {
-		padding-right: 1.25rem;
-		padding-left: 1.25rem;
-		border-bottom: 2px solid rgb(202, 202, 202);
-	}
-	
-	.tabs .nav-link:hover,
-	.tabs .nav-link.active {
-		border-bottom: 2px solid var(--black);
-	}
-
-	.tabs .image-container {
-		margin-bottom: 0;
-	}
-	/* end of features */
-
-
-	/* Features Lightboxes */
-	.lightbox-basic {
-		max-width: 62.5rem;
-		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-	}
-
-	.lightbox-basic .image-container {
-		max-width: 100%;
-		margin-right: 2rem;
-		margin-bottom: 0;
-		margin-left: 0.5rem;
-	}
-	
-	.lightbox-basic h3 {
-		margin-top: 0.5rem;
-	}
-	/* end of features lightboxes */
-
-
 	/* Details */
 	.basic-1 {
 		padding-top: 4rem;
@@ -1517,21 +1164,6 @@ a:hover.back-to-top {
 		width: 12.5rem;
 	}
 	/* end of description */
-
-
-	/* Features */
-	.tabs .image-container {
-		margin-right: 1.5rem;
-		margin-left: 1rem;
-	}
-	
-	.tabs .text-container {
-		margin-top: 1.5rem;
-		margin-right: 1rem;
-		margin-left: 1.5rem;
-	}
-	/* end of features */
-
 
 	/* Details */
 	.basic-1 .image-container {
@@ -1705,8 +1337,30 @@ a:hover.back-to-top {
 			margin-top: 10px;
 		}
 
-		/* instagram*/
-.containerOne:hover {
+.icon-container{
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 25px;
+	gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background-color: rgb(44, 44, 44);
+	/* background-color: #f0f0ee; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition-duration: .3s;
+	}
+  /* instagram*/
+  .containerOne:hover {
 	background-color: #d62976;
 	transition-duration: .3s;
   }
@@ -1724,5 +1378,128 @@ a:hover.back-to-top {
   .containerFour:hover {
 	background-color: #128C7E;
 	transition-duration: .3s;
+  }
+  
+  .containerFive:hover {
+	background-color: #000000;
+	transition-duration: .3s;
+  }
+
+  .socialContainer:active {
+	transform: scale(0.9);
+	transition-duration: .3s;
+  }
+  
+  .socialSvg {
+	width: 17px;
+  }
+  
+  .socialSvg path {
+	fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+	animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+	0% {
+	  transform: translateY(-50px);
+	  opacity: 0;
+	}
+  
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  
+
+  .image-container-about{
+	display: flex;
+	justify-content: center;
+  }
+
+.btnavdiv{
+	margin-left: 10px;
+}
+.btnabout{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background: #0a0a0a;
+	box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	cursor: pointer;
+	border: none;
+	}
+  
+  .btnabout:after {
+	content: " ";
+	width: 0%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	transition: all 0.4s ease-in-out;
+	right: 0;
+  }
+  
+  .btnabout:hover::after {
+	right: auto;
+	left: 0;
+	width: 100%;
+  }
+  
+  .btnabout .abt{
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px 25px;
+	color: #fff;
+	font-size: 1.125em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	z-index: 20;
+	transition: all 0.3s ease-in-out;
+	}
+  
+  .btnabout:hover .abt{
+	color: #0a0a0a;
+	animation: scaleUp 0.3s ease-in-out;
+  }
+
+  .btnabout .nav{
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px 10px;
+	color: #fff;
+	font-size: 1.0em;
+	font-weight: 700;
+	/* letter-spacing: 0.1em; */
+	z-index: 20;
+	transition: all 0.3s ease-in-out;
+	}
+  
+  .btnabout:hover .nav{
+	color: #0a0a0a;
+	animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+	0% {
+	  transform: scale(1);
+	}
+  
+	50% {
+	  transform: scale(0.95);
+	}
+  
+	100% {
+	  transform: scale(1);
+	}
   }
   

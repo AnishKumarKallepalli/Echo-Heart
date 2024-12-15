@@ -13,7 +13,6 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -21,18 +20,7 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/Final L Pro.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top" data-new-gr-c-s-check-loaded="14.1211.0" data-gr-ext-installed="">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper" style="display: none;">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-    
+<body data-spy="scroll" data-target=".fixed-top" data-new-gr-c-s-check-loaded="14.1211.0" data-gr-ext-installed="">  
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top top-nav-collapse">
@@ -42,7 +30,6 @@
             <a class="navbar-brand logo-image" href="index.html"><img src="images/Final L Pro.png" alt="alternative"></a><h2 class="headerh2">ECHOHEART</h2>
             <!-- <a class="navbar-brand logo-image" href="index.html">ECHOHEART</a>  -->
 
-            
             <!-- Mobile Menu Toggle Button -->
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -61,27 +48,18 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#about">ABOUT US</a>
                     </li>
-
-                    <!-- Dropdown Menu -->          
-                    <li class="nav-item dropdown">
-                        
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
-                            <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                            <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                        </div>
-                    </li>
-                    <!-- end of dropdown menu -->
-
                     <li class="nav-item">
                         
                     </li>
                 </ul>
-                <span class="nav-item">
+                <!-- <span class="nav-item">
                     <a class="btn-outline-sm page-scroll" href="#subform">Join Our Waitlist</a>
-                </span>
+                </span> -->
+                <div class="btnavdiv">
+                    <button class="btnabout">
+                        <a class = "nav" href="#subform">Join Our Waitlist</a>
+                    </button>
+                </div>
             </div>
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -170,18 +148,6 @@
                     </div> -->
                     <!-- end of card -->
 
-                    <!-- Card -->
-                    <!-- <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/easy.png" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Effortless Setup</h4>
-                            <p>Easily record voices or upload existing audio with simple, user-friendly tools. Setting up your personalized assistant is quick and hassle-free.</p>
-                        </div>
-                    </div> -->
-                    <!-- end of card -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -195,12 +161,19 @@
                     <div class="text-container">
                         <h2>Why EchoHeart?</h2>
                         <p>At EchoHeart, we believe every voice tells a story, and some voices are too precious to lose. Whether it's the reassuring tone of a parent or the laughter of a friend, voices carry emotions and memories that stay with us forever. Our AI-powered assistant preserves these cherished voices, offering families a way to stay connected across distance and time. With EchoHeart, you don't just hear their voice, you feel their presence.</p>
-                        <a class="btn-solid-reg page-scroll" href="#subform">Join Our Waitlist</a>
+                        <div class="btnaboutdiv">
+                            <button class="btnabout">
+                                <a class= "abt" href="#subform">Join Our Waitlist</a>
+                            </button>
+                        </div>
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details.png" alt="alternative">
+                    <div class="image-container-about">
+                        <!-- <img class="img-fluid" src="images/details.png" alt="alternative"> -->
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/d2512080-b412-4fb7-b64d-2d136fa9eec0/QHjMR72Lmp.lottie" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -244,37 +217,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="icon-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x containerOne"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            <a class="socialContainer containerOne" href="#">
+                                <img src="images/instagram.png" style="width: 20px; height: 20px;" alt="alternative">
                             </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x containerTwo"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            <a class="socialContainer containerTwo" href="#">
+                                <img src="images/facebook.png" style="width: 20px; height: 20px;" alt="alternative">
                             </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x containerThree"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            <a class="socialContainer containerThree" href="#">
+                                <img src="images/linkedin.png" style="width: 20px; height: 20px;" alt="alternative">
                             </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x containerFour"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            <a class="socialContainer containerFour" href="#">
+                                <img src="images/whatsapp.png" style="width: 20px; height: 20px;" alt="alternative">
                             </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x containerFive"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-
+                            <a class="socialContainer containerFive" href="#">
+                                <img src="images/twitter.png" style="width: 20px; height: 20px;" alt="alternative">
                             </a>
-                        </span>
+                          </div> 
                     </div> <!-- end of col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
