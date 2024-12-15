@@ -294,12 +294,12 @@
             // Collect form data
             const name = $("#nname").val();
             const email = $("#nemail").val();
-
+            
             // Construct the Google Form submission URL with pre-filled IDs
-            const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSdcZlkvJzl3RmAlvsJ5NClyQLMMfLZJduMvX4RPGwcAcD58-g/formResponse";
+            const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
             const formData = new URLSearchParams({
-                "entry.1137180397": name,
-                "entry.553871079": email,
+                "entry.2024628311": name,
+                "entry.175637587": email,
             });
 
             // Submit the form data to Google Forms
