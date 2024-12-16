@@ -129,7 +129,7 @@ a.white {
 }
 
 .basic-1 .row{
-	padding-top: 40px;
+	/* padding-top: 40px; */
 }
 
 .btn-solid-reg {
@@ -224,7 +224,7 @@ a.white {
 
 .form-group {
 	position: relative;
-	/* width: 140%; */
+	width: 100%;
 	margin-bottom: 1.25rem;
 }
 
@@ -773,7 +773,7 @@ input[type='checkbox'] {
 }
 
 .cards-1 .h2-heading {
-	margin-bottom: 3.5rem;
+	/* margin-bottom: 3.5rem; */
 	color: var(--black);
 }
 
@@ -847,7 +847,7 @@ input[type='checkbox'] {
 	border-radius: 0.5rem;
 	background-color: var(--cards);
 	/* align-content: center; */
-	display: flex;
+	/* display: flex; */
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: column;
@@ -1086,14 +1086,14 @@ input[type='checkbox'] {
 		width: 55rem;
 		margin-right: auto;
 		margin-left: auto;
-		/* padding-top: 5rem; */
-		/* padding-bottom: 4.5rem; */
+		padding-top: 5rem;
+		padding-bottom: 4.5rem;
 		background-color: var(--cards);
 	}
 
 	.form h2 {
-		margin-right: 7rem;
-		margin-left: 7rem;
+		/* margin-right: 7rem; */
+		/* margin-left: 7rem; */
 	}
 
 	.form form {
@@ -1301,7 +1301,7 @@ input[type='checkbox'] {
   }
 
 .formpara{
-	width: 50%;
+	/* width: 50%; */
 	text-align: center;
 	padding-bottom: 2rem;
 }
@@ -1343,9 +1343,9 @@ input[type='checkbox'] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 25px 25px;
+	/* padding: 25px 25px; */
 	gap: 20px;
-  }
+	}
   
   /* for all social containers*/
   .socialContainer {
@@ -1420,7 +1420,9 @@ input[type='checkbox'] {
   .image-container-about{
 	display: flex;
 	justify-content: center;
-  }
+	/* margin-top: -20px; */
+	/* overflow: hidden; */
+	}
 
 .btnavdiv{
 	margin-left: 10px;
