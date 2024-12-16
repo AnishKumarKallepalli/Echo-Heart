@@ -28,6 +28,15 @@ body, p {
 	text-align: justify;
 }
 
+.form form {
+	margin-right: 3rem;
+	margin-left: 3rem;
+}
+
+.formpara{
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
 
 p{
 	color: var(--textlight);
@@ -938,8 +947,13 @@ input[type='checkbox'] {
 	}
 
 	.form form {
-		margin-right: 2rem;
-		margin-left: 2rem;
+		margin-right: 9rem;
+		margin-left: 9rem;
+	}
+
+	.formpara{
+		margin-left: 9rem;
+		margin-right: 9rem;
 	}
 	/* end of newsletter */
 
@@ -1097,8 +1111,14 @@ input[type='checkbox'] {
 	}
 
 	.form form {
-		margin-right: 9rem;
-		margin-left: 9rem;
+		margin-right: 12rem;
+		margin-left: 12rem;
+	}
+
+	.formpara{
+		padding-bottom: 2rem;
+		margin-left: 12rem;
+		margin-right: 12rem;
 	}
 	/* end of newsletter */
 
@@ -1198,6 +1218,11 @@ input[type='checkbox'] {
 	.form form {
 		margin-right: 15rem;
 		margin-left: 15rem;
+	}
+
+	.formpara{
+		margin-left: 15rem;
+		margin-right: 15rem;
 	}
 	/* end of newsletter */
 
@@ -1304,6 +1329,8 @@ input[type='checkbox'] {
 	/* width: 50%; */
 	text-align: center;
 	padding-bottom: 2rem;
+	/* margin-left: 15rem; */
+	/* margin-right: 15rem; */
 }
 
 /* .mainvideo{
@@ -1566,3 +1593,5 @@ input[type='checkbox'] {
 	top: 28px;
 	left: 5px;
   }
+
+  
