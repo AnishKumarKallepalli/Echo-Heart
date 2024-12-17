@@ -4,7 +4,7 @@
 :root {
 	--black: #0a0a0a;
 	--background: #fff;
-	--cards: #f0f0ee;
+	/* --cards: #f0f0ee; */
 	--cards: #fff;
 	/* --cards: #e7e7ea; */
 	--textlight :hsl(30, 3%, 14%, 85%);
