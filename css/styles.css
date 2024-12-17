@@ -6,7 +6,7 @@
 	--background: #fff;
 	--cards: #f0f0ee;
 	/* --cards: #e7e7ea; */
-	--textlight :hsl(30, 3%, 14%, 70%);
+	--textlight :hsl(30, 3%, 14%, 85%);
 	--textdark :#0a0a0a;
 	--button: #0a0a0a;
 	--button-hover: #fff;
@@ -51,15 +51,31 @@ p{
 	font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
 }
 
+
 h1 {
-	font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
+	/* font: 700 2.5rem/3.125rem "Open Sans", sans-serif; */
 	letter-spacing: -0.2px;
 }
 
 h2 {
-	font: 700 2rem/2.625rem "Open Sans", sans-serif;
+	/* font: 700 2rem/2.625rem "Open Sans", sans-serif; */
 	letter-spacing: -0.2px;
 }
+
+/* .h2-heading{
+	--gradient-color-1: #ff6f6f; 
+	--gradient-color-2: #8b2dd3;
+	--gradient-color-3: #1a7fbe; 
+	--gradient-color-4: #35fced;
+	--gradient-color-1-start: 0%;
+	--gradient-color-2-start: 50%;
+	--gradient-color-3-start: 100%;
+	--gradient-angle: 135deg;
+	background-image: linear-gradient(var(--gradient-angle), var(--gradient-color-1) var(--gradient-color-1-start), var(--gradient-color-2) var(--gradient-color-2-start), var(--gradient-color-3) var(--gradient-color-3-start));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color:transparent;
+} */
 
 h3 {
 	font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
@@ -721,8 +737,8 @@ input[type='checkbox'] {
 }
 
 .header .header-content {
-	padding-top: 4rem;
-	/* padding-bottom: 4rem; */
+	padding-top: 8rem;
+	padding-bottom: 4rem;
 	text-align: center;
 }
 
@@ -732,7 +748,7 @@ input[type='checkbox'] {
 
 .header h1 {
 	margin-bottom: 1rem;
-	color: var(--black);
+	/* color: var(--black); */
 	font-size: 2.5rem;
 	line-height: 3rem;
 }
@@ -784,7 +800,7 @@ input[type='checkbox'] {
 
 .cards-1 .h2-heading {
 	/* margin-bottom: 3.5rem; */
-	color: var(--black);
+	/* color: var(--black); */
 }
 
 .cards-1 .card {
@@ -821,7 +837,7 @@ input[type='checkbox'] {
 /***********************/
 .basic-1 {
 	padding-top: 7.5rem;
-	padding-bottom: 3rem;
+	/* padding-bottom: 3rem; */
 }
 
 .basic-1 .text-container {
@@ -854,6 +870,8 @@ input[type='checkbox'] {
 
 .form .text-container {
 	margin-bottom: 2rem;
+	/* margin-left: 2rem; */
+	/* margin-right: 2rem; */
 	padding: 3.5rem 1rem 2.5rem 1rem;
 	border-radius: 0.5rem;
 	background-color: var(--cards);
@@ -928,7 +946,7 @@ input[type='checkbox'] {
 	}
 
 	.header h1 {
-		font-size: 3.5rem;
+		font-size: 3.25rem;
 		line-height: 4.125rem;
 	}
 
@@ -945,7 +963,7 @@ input[type='checkbox'] {
 
 	/* Newsletter */
 	.form .text-container {
-		padding: 4rem 2.5rem 3rem 2.5rem;
+		padding: 3rem 2.5rem 3rem 2.5rem;
 	}
 
 	.form form {
@@ -1043,6 +1061,7 @@ input[type='checkbox'] {
 	/* Header */
 	.header .header-content {
 		text-align: left;
+		padding-top: 4rem;
 	}
 
 	.header .text-container {
@@ -1058,7 +1077,7 @@ input[type='checkbox'] {
 	.header .image-container .img-wrapper {
 		position: absolute;
 		display: block;
-		width: 540px;
+		width: 100%;
 	}
 
 	.header-frame {
@@ -1102,8 +1121,8 @@ input[type='checkbox'] {
 		width: 55rem;
 		margin-right: auto;
 		margin-left: auto;
-		padding-top: 5rem;
-		padding-bottom: 4.5rem;
+		/* padding-top: 5rem; */
+		/* padding-bottom: 4.5rem; */
 		background-color: var(--cards);
 	}
 
@@ -1140,7 +1159,7 @@ input[type='checkbox'] {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 5rem;
+		padding-top: 3rem;
 		/* padding-bottom: 5rem; */
 	}
 
@@ -1155,7 +1174,7 @@ input[type='checkbox'] {
 	}
 
 	.header .image-container .img-wrapper {
-		width: 500px;
+		width: 100%;
 	}
 
 	.header-frame {
@@ -1285,7 +1304,7 @@ input[type='checkbox'] {
 	margin: 0;
 	font-size: 24px;
 	color: #333;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 
 .mycard:hover svg {
@@ -1343,9 +1362,9 @@ input[type='checkbox'] {
 	align-items: flex-start;
 } */
 
-.btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
+.btn-grad {background-image: linear-gradient(to right, #E55D87 10%, #7783b7 51%, #E55D87 100%);}
+
          .btn-grad {
-            /* margin: 10px; */
             padding: 15px 45px;
             text-align: center;
             text-transform: uppercase;
@@ -1358,7 +1377,7 @@ input[type='checkbox'] {
           }
 
           .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
+            background-position: right center;
             color: #fff;
             text-decoration: none;
 		}
@@ -1503,6 +1522,9 @@ input[type='checkbox'] {
 	color: var(--buttontext-hover)
    }
 
+  .btnheader{
+	width: 100%;
+	}
 .burger {
 	position: relative;
 	width: 40px;
