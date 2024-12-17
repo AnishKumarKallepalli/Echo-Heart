@@ -8,10 +8,10 @@
 	/* --cards: #e7e7ea; */
 	--textlight :hsl(30, 3%, 14%, 70%);
 	--textdark :#0a0a0a;
-	--button: #fff;
-	--button-hover: #0a0a0a;
-	--buttontext: #0a0a0a;
-	--buttontext-hover: #fff;
+	--button: #0a0a0a;
+	--button-hover: #fff;
+	--buttontext: #fff;
+	--buttontext-hover: #0a0a0a;
 	--gold: #c7b198;
 	font-family: "Open Sans", sans-serif;
   }
@@ -722,7 +722,7 @@ input[type='checkbox'] {
 
 .header .header-content {
 	padding-top: 4rem;
-	padding-bottom: 4rem;
+	/* padding-bottom: 4rem; */
 	text-align: center;
 }
 
@@ -826,6 +826,7 @@ input[type='checkbox'] {
 
 .basic-1 .text-container {
 	margin-bottom: 3.75rem;
+	/* vertical-align: middle; */
 }
 
 .basic-1 .list-unstyled {
@@ -1107,8 +1108,8 @@ input[type='checkbox'] {
 	}
 
 	.form h2 {
-		/* margin-right: 7rem; */
-		/* margin-left: 7rem; */
+		margin-right: 7rem;
+		margin-left: 7rem;
 	}
 
 	.form form {
@@ -1140,7 +1141,7 @@ input[type='checkbox'] {
 	/* Header */
 	.header .header-content {
 		padding-top: 5rem;
-		padding-bottom: 5rem;
+		/* padding-bottom: 5rem; */
 	}
 
 	.header .text-container {
@@ -1455,86 +1456,53 @@ input[type='checkbox'] {
 .btnavdiv{
 	margin-left: 10px;
 }
-.btnabout{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 5px;
-	background: #0a0a0a;
-	box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	cursor: pointer;
-	border: none;
-	}
-  
-  .btnabout:after {
-	content: " ";
-	width: 0%;
-	height: 100%;
-	background: #fff;
-	position: absolute;
-	transition: all 0.4s ease-in-out;
-	right: 0;
-  }
-  
-  .btnabout:hover::after {
-	right: auto;
-	left: 0;
-	width: 100%;
-  }
-  
-  .btnabout .abt{
-	text-align: center;
-	text-decoration: none;
-	width: 100%;
-	padding: 10px 25px;
-	color: #fff;
-	font-size: 1.125em;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	z-index: 20;
-	transition: all 0.3s ease-in-out;
-	}
-  
-  .btnabout:hover .abt{
-	color: #0a0a0a;
-	animation: scaleUp 0.3s ease-in-out;
-  }
 
-  .btnabout .nav{
-	text-align: center;
-	text-decoration: none;
+.btnnav {
+	padding: 5px 5px;
+	border: unset;
+	border-radius: 10px;
+	color: var(--buttontext);
+	z-index: 1;
+	background: var(--button);
+	position: relative;
+	font-weight: 1000;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.27);
+	transition: all 250ms;
+	overflow: hidden;
+	}
+   
+   .btnnav::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: var(--button-hover);
+	z-index: -1;
+	/* -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27); */
+	/* box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27); */
+	transition: all 250ms
+	}
+   
+   .btnnav:hover {
+	color: var(--buttontext-hover);
+
+	background: var(--button-hover);
+   }
+   
+   .btnnav:hover::before {
 	width: 100%;
-	padding: 10px 10px;
-	color: #fff;
-	font-size: 1.0em;
-	font-weight: 700;
-	/* letter-spacing: 0.1em; */
-	z-index: 20;
-	transition: all 0.3s ease-in-out;
-	}
-  
-  .btnabout:hover .nav{
-	color: #0a0a0a;
-	animation: scaleUp 0.3s ease-in-out;
-  }
-  
-  @keyframes scaleUp {
-	0% {
-	  transform: scale(1);
-	}
-  
-	50% {
-	  transform: scale(0.95);
-	}
-  
-	100% {
-	  transform: scale(1);
-	}
-  }
-  
-  /* From Uiverse.io by Cevorob */ 
+   }
+
+   .btnnav .nav{
+	color: var(--buttontext);
+   }
+   .btnnav:hover .nav{
+	color: var(--buttontext-hover)
+   }
+
 .burger {
 	position: relative;
 	width: 40px;
