@@ -5,6 +5,7 @@
 	--black: #0a0a0a;
 	--background: #fff;
 	--cards: #f0f0ee;
+	/* --cards: #e7e7ea; */
 	--textlight :hsl(30, 3%, 14%, 70%);
 	--textdark :#0a0a0a;
 	--button: #fff;
@@ -1243,7 +1244,7 @@ input[type='checkbox'] {
 	justify-content: center;
 	overflow: hidden;
 	perspective: 1000px;
-	box-shadow: 0 0 0 5px var(--background)fff80;
+	box-shadow: 0 0 0 5px var(--background);
 	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
   
