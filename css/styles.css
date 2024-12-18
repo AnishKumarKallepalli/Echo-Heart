@@ -7,6 +7,8 @@
 	/* --cards: #f0f0ee; */
 	--cards: #fff;
 	/* --cards: #e7e7ea; */
+	--blurback: #9586ff66;
+	--blurback: #bb4f7a66;
 	--textlight :hsl(30, 3%, 14%, 85%);
 	--textdark :#0a0a0a;
 	--button: #0a0a0a;
@@ -49,7 +51,9 @@ p{
 }
 
 .p-small {
+	/* text-align: center; */
 	font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+	/* margin-bottom: 0px; */
 }
 
 
@@ -876,7 +880,7 @@ input[type='checkbox'] {
 	/* margin-right: 2rem; */
 	padding: 3.5rem 1rem 2.5rem 1rem;
 	border-radius: 0.5rem;
-	background-color: var(--cards);
+	/* background-color: var(--cards); */
 	/* align-content: center; */
 	/* display: flex; */
 	flex-wrap: wrap;
@@ -1132,7 +1136,7 @@ input[type='checkbox'] {
 		margin-left: auto;
 		/* padding-top: 5rem; */
 		/* padding-bottom: 4.5rem; */
-		background-color: var(--cards);
+		/* background-color: var(--cards); */
 	}
 
 	.form h2 {
@@ -1330,7 +1334,7 @@ input[type='checkbox'] {
 
 .mybutton {
 	padding: 1.3em 3em;
-	font-size: 12px;
+	/* font-size: 12px; */
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	font-weight: 500;
@@ -1594,4 +1598,19 @@ input[type='checkbox'] {
 	left: 5px;
   }
 
-  
+  .background-effect {
+    /* display: flex; */
+    z-index: -1;
+    filter: blur(150px);
+    background-color: var(--blurback);
+    border: 1px #000;
+    border-radius: 100%;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    inset: auto;
+    overflow: visible;
+    /* align-content: center; */
+    /* max-width: fit-content; */
+    margin-top: 3rem;
+  }
