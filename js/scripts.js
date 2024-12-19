@@ -42,6 +42,11 @@
         $(".navbar-collapse").collapse('hide');
     });
 
+    $(".btnavdiv button a").on("click", function(event) {
+        if (!$(this).parent().hasClass('dropdown'))
+            $(".navbar-collapse").collapse('hide');
+        });
+
 
     /* Image Slider - Swiper */
     var imageSlider = new Swiper('.image-slider', {
