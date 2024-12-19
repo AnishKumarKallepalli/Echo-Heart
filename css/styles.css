@@ -996,7 +996,7 @@ input[type='checkbox'] {
 	
 .header .header-content {
     /* padding-top: 8rem; */
-    /* padding-bottom: 4rem; */
+    padding-bottom: 3rem;
 }
 
 	/* Navigation */
@@ -1175,7 +1175,7 @@ input[type='checkbox'] {
 	/* Header */
 	.header .header-content {
 		padding-top: 3rem;
-		padding-bottom: 5rem;
+		padding-bottom: 3rem;
 	}
 
 	.header .text-container {
