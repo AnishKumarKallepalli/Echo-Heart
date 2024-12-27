@@ -3,14 +3,6 @@ type = "javascript"
 account_id = "53587ff809e7fbb7aa06b727b605c720"
 workers_dev = true
 
-[env.production]
-vars = { NAME_ENTRY = "entry.2024628311", EMAIL_ENTRY = "entry.175637587" }
-
-[env.production.observability.logs]
-enabled = true
-
-[env.development]
-vars = { NAME_ENTRY = "entry.2024628311", EMAIL_ENTRY = "entry.175637587" }
-
-[env.development.observability.logs]
-enabled = true
+[vars]
+NAME_ENTRY = "entry.2024628311"
+EMAIL_ENTRY = "entry.175637587"

@@ -3,12 +3,13 @@ addEventListener('fetch', event => {
 });
 
 async function handleRequest(request, event) {
-    log(event);
     try {
-        const { NAME_ENTRY, EMAIL_ENTRY } = event; // Access the secrets
         const formData = await request.formData();
         const name = formData.get('name');
         const email = formData.get('email');
+        console.log("Name and email given is",name,email);
+        console.log("Event is",event);
+        const { NAME_ENTRY, EMAIL_ENTRY } = event; // Access the secrets
 
         const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
         const params = new URLSearchParams({
