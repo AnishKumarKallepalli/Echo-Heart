@@ -296,8 +296,8 @@
     //         // Construct the Google Form submission URL with pre-filled IDs
     //         const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
     //         const formData = new URLSearchParams({
-    //             [nameEntry]: name,
-    //             [emailEntry]: email,
+    //             "entry.2024628311" : name,
+    //             "entry.175637587" : email,
     //         });
 
     //         // Submit the form data to Google Forms
