@@ -1,4 +1,3 @@
-
 (function($) {
     "use strict"; 
 	
@@ -281,6 +280,42 @@
     //     }
     // });
     /* Newsletter Form */
+    // $("#newsletterForm").validator().on("submit", function(event) {
+    //     if (event.isDefaultPrevented()) {
+    //         // Handle the invalid form...
+    //         nformError();
+    //         nsubmitMSG(false, "Please fill all fields!");
+    //     } else {
+    //         // Everything looks good!
+    //         event.preventDefault();
+
+    //         // Collect form data
+    //         const name = $("#nname").val();
+    //         const email = $("#nemail").val();
+
+    //         console.log(nameEntry,emailEntry);
+    //         // Construct the Google Form submission URL with pre-filled IDs
+    //         const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
+    //         const formData = new URLSearchParams({
+    //             [nameEntry]: name,
+    //             [emailEntry]: email,
+    //         });
+
+    //         // Submit the form data to Google Forms
+    //         fetch(`${googleFormURL}?${formData.toString()}`, { method: "POST", mode: "no-cors" })
+    //             .then(() => {
+    //                 // Show success message
+    //                 nformSuccess();
+    //                 nsubmitMSG(true, "Thank you! Your submission has been received.");
+    //             })
+    //             .catch(() => {
+    //                 // Handle errors
+    //                 nformError();
+    //                 nsubmitMSG(false, "Something went wrong. Please try again!");
+    //             });
+    //     }
+    // });
+
     $("#newsletterForm").validator().on("submit", function(event) {
         if (event.isDefaultPrevented()) {
             // Handle the invalid form...
@@ -293,26 +328,26 @@
             // Collect form data
             const name = $("#nname").val();
             const email = $("#nemail").val();
-            
-            // Construct the Google Form submission URL with pre-filled IDs
-            const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
-            const formData = new URLSearchParams({
-                "entry.2024628311": name,
-                "entry.175637587": email,
-            });
 
-            // Submit the form data to Google Forms
-            fetch(`${googleFormURL}?${formData.toString()}`, { method: "POST", mode: "no-cors" })
-                .then(() => {
-                    // Show success message
-                    nformSuccess();
-                    nsubmitMSG(true, "Thank you! Your submission has been received.");
-                })
-                .catch(() => {
-                    // Handle errors
-                    nformError();
-                    nsubmitMSG(false, "Something went wrong. Please try again!");
-                });
+            // Submit the form data to the Cloudflare Worker
+            fetch("http://127.0.0.1:8787/", {
+                method: "POST",
+                body: new URLSearchParams({ name, email }),
+            })
+            // fetch("https://echo-worker-production.anishkumar2002-k.workers.dev", {
+            //     method: "POST",
+            //     body: new URLSearchParams({ name, email }),
+            // })
+            .then(() => {
+                // Show success message
+                nformSuccess();
+                nsubmitMSG(true, "Thank you! Your submission has been received.");
+            })
+            .catch(() => {
+                // Handle error
+                nformError();
+                nsubmitMSG(false, "There was an error. Please try again.");
+            });
         }
     });
 
