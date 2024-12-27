@@ -334,7 +334,7 @@
             //     method: "POST",
             //     body: new URLSearchParams({ name, email }),
             // })
-            fetch("https://echo-worker-production.anishkumar2002-k.workers.dev", {
+            fetch("https://echo-worker.anishkumar2002-k.workers.dev", {
                 method: "POST",
                 body: new URLSearchParams({ name, email }),
             })
