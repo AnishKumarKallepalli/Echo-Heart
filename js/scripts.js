@@ -330,14 +330,14 @@
             const email = $("#nemail").val();
 
             // Submit the form data to the Cloudflare Worker
-            fetch("http://127.0.0.1:8787/", {
-                method: "POST",
-                body: new URLSearchParams({ name, email }),
-            })
-            // fetch("https://echo-worker-production.anishkumar2002-k.workers.dev", {
+            // fetch("http://127.0.0.1:8787/", {
             //     method: "POST",
             //     body: new URLSearchParams({ name, email }),
             // })
+            fetch("https://echo-worker-production.anishkumar2002-k.workers.dev", {
+                method: "POST",
+                body: new URLSearchParams({ name, email }),
+            })
             .then(() => {
                 // Show success message
                 nformSuccess();

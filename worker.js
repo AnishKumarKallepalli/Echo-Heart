@@ -7,7 +7,7 @@ async function handleRequest(request) {
     const formData = await request.formData();
     const name = formData.get('name');
     const email = formData.get('email');
-
+    console.log([NAME_ENTRY], [EMAIL_ENTRY]);
     const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
     const params = new URLSearchParams({
         [NAME_ENTRY]: name,
