@@ -293,9 +293,9 @@
             const name = $("#nname").val();
             const email = $("#nemail").val();
 
-            console.log(process.evn.nameEntry,process.evn.emailEntry);
-            const name_e = process.evn.nameEntry;
-            const email_e = process.evn.emailEntry;
+            console.log(process.evn.NameEntry,process.evn.EmailEntry);
+            const name_e = process.evn.NameEntry;
+            const email_e = process.evn.EmailEntry;
             // Construct the Google Form submission URL with pre-filled IDs
             const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSd7JrqRsuWO5u1v0Nc93lFwAdtQelmZAfiLCxL4ZXejHw_6cg/formResponse";
             const formData = new URLSearchParams({
