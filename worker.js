@@ -3,8 +3,9 @@ addEventListener('fetch', event => {
 });
 
 async function handleRequest(request, event) {
+    log(event);
     try {
-        const { NAME_ENTRY, EMAIL_ENTRY } = event.env; // Access the secrets
+        const { NAME_ENTRY, EMAIL_ENTRY } = event; // Access the secrets
         const formData = await request.formData();
         const name = formData.get('name');
         const email = formData.get('email');
